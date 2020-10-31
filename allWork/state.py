@@ -110,7 +110,7 @@ def menu():
 def  add_paradestate():
     found = 0
     while found ==0:
-        date = input("Today's date: ")
+        date = ("Select * FROM")
         with sqlite3.connect("Project.db") as db:
             cursor = db.cursor()
         find_paradestate = ("SELECT * FROM columns WHERE date = ?")
@@ -130,7 +130,6 @@ def  add_paradestate():
     ops = input("Operation: ")
     course = input("Course: ")
     naicc = input("NAICC: ")
-    nafc = input("NAFC: ")
     leave = input("Pass: ")
     hosp_admin = input("Hospital Admission: ")
 
